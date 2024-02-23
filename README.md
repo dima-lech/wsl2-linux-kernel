@@ -15,8 +15,7 @@ Output in:
 
 ## Install
 
-In Windows user directory:
-1. Add file .wslconfig
+1. In Windows user directory: add file .wslconfig
 2. Insert path in .wslconfig
 	```
 	[wsl2]
