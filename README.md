@@ -9,6 +9,8 @@ Using linux-msft-wsl-5.15.146.1.tar.gz
 ```
 make KCONFIG_CONFIG=Microsoft/config-wsl
 ```
+Output in:
+> arch/x86/boot/bzImage
 
 
 ## Install
@@ -20,6 +22,12 @@ In Windows user directory:
 	[wsl2]
 	kernel=C:\\Users\\Dima\\bzimage
 	```
+3. In Windows cmd:
+	```
+	wsl --shutdown
+	```
+4. Run wsl
+
 
 Full instructions at
 https://learn.microsoft.com/en-us/windows/wsl/wsl-config#wslconfig
