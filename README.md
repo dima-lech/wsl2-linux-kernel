@@ -32,5 +32,15 @@ Full instructions at
 https://learn.microsoft.com/en-us/windows/wsl/wsl-config#wslconfig
 
 
+## Kernel Module Build
 
+Make command:
+```
+make -C /lib/modules/$(uname -r)/build M=$(pwd) modules
+```
+
+In WSL case:
+```
+make -C ../WSL2-Linux-Kernel-linux-msft-wsl-5.15.146.1 M=$(pwd) modules
+```
 
