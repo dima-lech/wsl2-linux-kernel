@@ -74,15 +74,23 @@ Navigate through menu and make custom selections, then save config and exit. Aft
 
 #### Example: Set Custom Version Name
 
-1. In menu, navigate to:
+In menu, navigate to:
 > General setup --> Local version - append to kernel release
-2. Enter custom string
-3. Save configuration and exit
-4. Build and install the kernel
-5. Verify version using:
+<img src="img/kernel-config-name1.png" alt="drawing" width="600"/>
+
+Enter custom string:
+
+<img src="img/kernel-config-name2.png" alt="drawing" width="600"/>
+
+Save configuration and exit
+
+Build and install the kernel
+
+Verify version using:
 ```
 uname -a
 ```
+<img src="img/kernel-config-name3.png" alt="drawing" width="400"/>
 
 
 ### Kernel Module Build
