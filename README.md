@@ -57,15 +57,26 @@ Full instructions can be found here:
 > https://learn.microsoft.com/en-us/windows/wsl/wsl-config#wslconfig
 
 
-## Kernel Module Build
+## More Advanced Topics
 
-Make command:
-```
-make -C /lib/modules/$(uname -r)/build M=$(pwd) modules
-```
+### Kernel Configuration
 
-In WSL case:
+Kernel can be configured as needed to add or remove features.
+
+To open kernel configuration menu, perform in kernel source directory:
 ```
-make -C ../WSL2-Linux-Kernel-linux-msft-wsl-5.15.146.1 M=$(pwd) modules
+make KCONFIG_CONFIG=Microsoft/config-wsl menuconfig
+```
+Navigate through menu and make custom selections, then save config and exit. Afterward perform **Build** and **Install** according to instructions above.
+
+
+
+### Kernel Module Build
+
+Kernel module can be used to add a specific feature into the kernel, for example: implement a device driver.
+
+In WSL case, to build a kenel module execute the following in source code directory:
+```
+make -C path/to/WSL2-Linux-Kernel-linux-msft-wsl-5.15.146.1 M=$(pwd) modules
 ```
 
