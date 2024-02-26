@@ -95,7 +95,7 @@ Verify version using:
 ```
 uname -a
 ```
-<img src="img/kernel-config-name3.png" alt="drawing" width="400"/>
+<img src="img/kernel-config-name3.png" alt="drawing" width="300"/>
 
 
 ### Kernel Module Build
