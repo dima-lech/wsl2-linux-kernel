@@ -4,7 +4,7 @@ Default kernel supplied with WSL is somewhat limited, for example loading kernel
 
 In order to rebuild the kernel follow steps below.
 
-**NOTE**: files provided in this repository are only examples for scripts, configurations and sources for implementing the instructions below. Their usage is not required.
+***NOTE***: files provided in this repository are only examples for scripts, configurations and sources for implementing the instructions below. Their usage is not required. It is **very recommended** to follow the instructions here and perform each step manually.
 
 
 ## Kernel Version
@@ -44,7 +44,7 @@ Output image will be located in:
 
 1. In Windows user directory: add file .wslconfig
 2. Copy bzImage output to the same user directory
-2. Insert path to bzImage in .wslconfig (**make sure to keep double slashes!**)
+2. Insert path to bzImage in .wslconfig (**make sure to keep double slashes and not have extra spaces!**)
 	```
 	[wsl2]
 	kernel=C:\\Users\\Dima\\bzimage
