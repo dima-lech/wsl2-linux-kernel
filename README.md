@@ -4,6 +4,9 @@ Default kernel supplied with WSL is somewhat limited, for example loading kernel
 
 In order to rebuild the kernel follow steps below.
 
+**NOTE**: files provided in this repository are only examples for scripts, configurations and sources for implementing the instructions below. Their usage is not required.
+
+
 ## Kernel Version
 
 WSL kernel versions can be obtained from:
@@ -69,6 +72,17 @@ make KCONFIG_CONFIG=Microsoft/config-wsl menuconfig
 ```
 Navigate through menu and make custom selections, then save config and exit. Afterward perform **Build** and **Install** according to instructions above.
 
+#### Example: Set Custom Version Name
+
+1. In menu, navigate to:
+> General setup --> Local version - append to kernel release
+2. Enter custom string
+3. Save configuration and exit
+4. Build and install the kernel
+5. Verify version using:
+```
+uname -a
+```
 
 
 ### Kernel Module Build
