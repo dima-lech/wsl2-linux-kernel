@@ -52,7 +52,7 @@ Output image will be located in:
 2. Insert path to bzImage in .wslconfig (**make sure to keep double slashes and not have extra spaces!**)
 	```
 	[wsl2]
-	kernel=C:\\Users\\Dima\\bzimage
+	kernel=C:\\Users\\UserName\\bzimage
 	```
 3. To close all wsl instances, run in **Windows** cmd:
 	```
