@@ -19,7 +19,10 @@ Download sources
 ```
 wget https://github.com/microsoft/WSL2-Linux-Kernel/archive/refs/tags/linux-msft-wsl-5.15.146.1.tar.gz
 ```
-Extract archive (*x* = extract, *v* = verbose, *f* = file)
+Extract archive using *tar* command
+* *x* = extract
+* *v* = verbose
+* *f* = file
 ```
 tar -xvf linux-msft-wsl-5.15.146.1.tar.gz
 ```
@@ -30,8 +33,10 @@ cd WSL2-Linux-Kernel-linux-msft-wsl-5.15.146.1
 
 ## Build
 
-Run make command
-(*KCONFIG_CONFIG* chooses wsl-specific settings, *-j* = number of concurrent jobs, *\`nproc\`* = returns number of processor cores for optimal build time - for example substitutes it with *8*)
+Run *make* command
+* *KCONFIG_CONFIG* chooses wsl-specific settings
+* *-j* = number of concurrent jobs
+* *\`nproc\`* = returns number of processor cores for optimal build time, for example substitutes it with *8*
 ```
 make KCONFIG_CONFIG=Microsoft/config-wsl -j`nproc`
 ```
