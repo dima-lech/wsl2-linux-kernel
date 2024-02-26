@@ -1,6 +1,8 @@
 # wsl2-linux-kernel
 
-Default kernel supplied with WSL is somewhat limited, for example loading kernel modules is not supported.
+Building the WSL kernel is not required to work in WSL, however it could be considered an intro exercise to kernel building.
+
+Default kernel supplied with WSL is somewhat limited, for example loading kernel modules is not supported. Rebuilding the kernel as specified below will add this feature.
 
 In order to rebuild the kernel follow steps below.
 
@@ -47,9 +49,9 @@ Output image will be located in:
 
 ## Install
 
-1. In Windows user directory: add file .wslconfig
-2. Copy bzImage output to the same user directory
-2. Insert path to bzImage in .wslconfig (**make sure to keep double slashes and not have extra spaces!**)
+1. In Windows user directory: add file *.wslconfig*
+2. Copy *bzImage* output to the same user directory
+2. Insert path to *bzImage* in *.wslconfig* (**make sure to keep double slashes and not have extra spaces!**)
 	```
 	[wsl2]
 	kernel=C:\\Users\\UserName\\bzimage
@@ -93,7 +95,7 @@ Build and install the kernel
 
 Verify version using:
 ```
-uname -a
+uname -r
 ```
 <img src="img/kernel-config-name3.png" alt="drawing" width="300"/>
 
