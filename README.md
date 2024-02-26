@@ -1,6 +1,6 @@
 # wsl2-linux-kernel
 
-Building the WSL kernel is not required to work in WSL, however it could be considered an intro exercise to kernel building.
+Building the WSL kernel is not required to work in WSL, however it could be considered an intro exercise to kernel building in general.
 
 Default kernel supplied with WSL is somewhat limited, for example loading kernel modules is not supported. Rebuilding the kernel as specified below will add this feature.
 
