@@ -4,8 +4,6 @@ Building the WSL kernel is not required to work in WSL, however it could be cons
 
 Default kernel supplied with WSL is somewhat limited, for example loading kernel modules is not supported. Rebuilding the kernel as specified below will add this feature.
 
-In order to rebuild the kernel follow steps below.
-
 ***NOTE***: files provided in this repository are only examples for scripts, configurations and sources for implementing the instructions below. Their usage is not required. It is **very recommended** to follow the instructions here and perform each step manually.
 
 
