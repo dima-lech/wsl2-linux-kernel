@@ -1,7 +1,7 @@
 obj-m += kernel-module-test.o 
  
 PWD := $(CURDIR)
-KERNEL_DIR := ../WSL2-Linux-Kernel-linux-msft-wsl-5.15.146.1 
+KERNEL_DIR := /lib/modules/`uname -r`/build
  
 all: 
 	make -C $(KERNEL_DIR) M=$(shell pwd) modules

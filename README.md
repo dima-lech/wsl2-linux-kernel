@@ -43,6 +43,11 @@ Run `make` command
 make KCONFIG_CONFIG=Microsoft/config-wsl -j`nproc`
 ```
 
+Install modules and headers
+```
+sudo make modules_install headers_install
+```
+
 Output image will be located in:
 > arch/x86/boot/bzImage
 
