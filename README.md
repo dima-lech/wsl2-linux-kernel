@@ -51,7 +51,7 @@ Output image will be located in:
 
 1. In Windows user directory: add file *.wslconfig*
 2. Copy *bzImage* output to the same user directory: Linux files can be accessed in Windows via the following path
-> \\wsl$
+> \\\\wsl$
 
 3. Insert path to *bzImage* in *.wslconfig* (**make sure to keep double slashes and not have extra spaces!**)
 	```
