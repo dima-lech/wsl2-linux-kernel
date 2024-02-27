@@ -7,4 +7,4 @@ all:
 	make -C $(KERNEL_DIR) M=$(shell pwd) modules
  
 clean: 
-	make -C M../WSL2-Linux-Kernel M=$(shell pwd) clean
+	make -C $(KERNEL_DIR) M=$(shell pwd) clean
