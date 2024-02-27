@@ -45,7 +45,7 @@ make KCONFIG_CONFIG=Microsoft/config-wsl -j`nproc`
 
 Install modules and headers
 ```
-sudo make modules_install headers_install
+sudo make INSTALL_HDR_PATH=/usr modules_install headers_install
 ```
 
 Output image will be located in:
