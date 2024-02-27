@@ -56,18 +56,18 @@ Output image will be located in:
 
 1. In Windows user directory: add file *.wslconfig*
 2. Copy *bzImage* output to the same user directory: Linux files can be accessed in Windows via the following path
-> \\\\wsl$
+	> \\\\wsl$
 
-3. Insert path to *bzImage* in *.wslconfig* (**make sure to keep double slashes and not have extra spaces!**)
+4. Insert path to *bzImage* in *.wslconfig* (**make sure to keep double slashes and not have extra spaces!**)
 	```
 	[wsl2]
 	kernel=C:\\Users\\UserName\\bzimage
 	```
-4. To close all wsl instances, run in **Windows** cmd as administrator:
+5. To close all wsl instances, run in **Windows** cmd as administrator:
 	```
 	wsl --shutdown
 	```
-5. Run wsl
+6. Run wsl
 
 
 Full instructions can be found here:
