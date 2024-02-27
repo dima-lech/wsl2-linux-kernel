@@ -1,7 +1,8 @@
+#include <linux/init.h>	/* Needed for the macros */
 #include <linux/module.h> /* Needed by all modules */ 
 #include <linux/printk.h> /* Needed for pr_info() */ 
  
-int init_module(void) 
+int module_test_init(void) 
 { 
     pr_info("Hello world from %s.\n", THIS_MODULE->name); 
  
@@ -9,9 +10,12 @@ int init_module(void)
     return 0; 
 } 
  
-void cleanup_module(void) 
+void module_test_exit(void) 
 { 
     pr_info("Goodbye world from %s.\n", THIS_MODULE->name); 
 } 
  
+module_init(module_test_init);
+module_exit(module_test_exit);
+
 MODULE_LICENSE("GPL");
