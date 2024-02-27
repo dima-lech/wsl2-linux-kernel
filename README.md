@@ -58,7 +58,7 @@ Output image will be located in:
 	[wsl2]
 	kernel=C:\\Users\\UserName\\bzimage
 	```
-4. To close all wsl instances, run in **Windows** cmd:
+4. To close all wsl instances, run in **Windows** cmd as administrator:
 	```
 	wsl --shutdown
 	```
