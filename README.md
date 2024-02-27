@@ -21,7 +21,7 @@ Download sources
 ```
 wget https://github.com/microsoft/WSL2-Linux-Kernel/archive/refs/tags/linux-msft-wsl-5.15.146.1.tar.gz
 ```
-Extract archive using *tar* command
+Extract archive using `tar` command
 * *x* = extract
 * *v* = verbose
 * *f* = file
@@ -35,7 +35,7 @@ cd WSL2-Linux-Kernel-linux-msft-wsl-5.15.146.1
 
 ## Build
 
-Run *make* command
+Run `make` command
 * *KCONFIG_CONFIG* chooses wsl-specific settings
 * *-j* = number of concurrent jobs
 * *\`nproc\`* = returns number of processor cores for optimal build time, for example substitutes it with *8*
@@ -50,17 +50,19 @@ Output image will be located in:
 ## Install
 
 1. In Windows user directory: add file *.wslconfig*
-2. Copy *bzImage* output to the same user directory
-2. Insert path to *bzImage* in *.wslconfig* (**make sure to keep double slashes and not have extra spaces!**)
+2. Copy *bzImage* output to the same user directory: Linux files can be accessed in Windows via the following path
+> \\wsl$
+
+3. Insert path to *bzImage* in *.wslconfig* (**make sure to keep double slashes and not have extra spaces!**)
 	```
 	[wsl2]
 	kernel=C:\\Users\\UserName\\bzimage
 	```
-3. To close all wsl instances, run in **Windows** cmd:
+4. To close all wsl instances, run in **Windows** cmd:
 	```
 	wsl --shutdown
 	```
-4. Run wsl
+5. Run wsl
 
 
 Full instructions can be found here:
