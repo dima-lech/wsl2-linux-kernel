@@ -8,6 +8,13 @@ Default kernel supplied with WSL is somewhat limited, for example loading kernel
 * Files provided in this repository are only examples for scripts, configurations and sources for implementing the instructions below. Their usage is not required. It is **very recommended** to follow the instructions here and perform each step manually.
 * WSL**2** is required.
 
+## Install Packages
+
+Install required packages using: (Ubuntu example)
+```
+sudo apt update
+sudo apt install build-essential flex bison libssl-dev libelf-dev bc python3 pahole libncurses-dev
+```
 
 ## Kernel Version
 
