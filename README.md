@@ -10,7 +10,8 @@ Default kernel supplied with WSL is somewhat limited, for example loading kernel
 
 ## Install Packages
 
-Install required packages using: (Ubuntu example)
+Install required packages.  
+Ubuntu example:
 ```
 sudo apt update
 sudo apt install build-essential flex bison libssl-dev libelf-dev bc python3 pahole libncurses-dev
